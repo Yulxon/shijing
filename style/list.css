@@ -1,3 +1,14 @@
+div.list {
+    position: fixed;
+    left: 20px;
+    top: 40px;
+}
+
+div.right {
+    left: 220px;
+    top: 40px;
+    position: fixed;
+}
 
 ol {
     list-style-type: none;
