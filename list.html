@@ -2,31 +2,49 @@
 <html lang="zh_CN">
 <head>
     <title></title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
     <style>
-        div.list {
-            position: fixed;
-            left: 20px;
-            top: 40px;
+        * {
+            border-style: solid;
+            border-width:1px;
         }
 
-        div.right {
-            left: 220px;
-            top: 40px;
-            position: fixed;
+        span {
+            margin: auto;
+            text-align: center;
+            width: 20%;
+            font-family: 'zktqkt', ui-serif;
+            font-size: 32px;
+            color: #64786f;
         }
 
-        ol {
+        li {
+            font-size: 25px;
+            margin: 0.5%;
             list-style-type: none;
-            margin: 0;
             padding: 0;
         }
     </style>
 </head>
 <body>
-<iframe src="head.html" frameborder="0" scrolling="no" onload="this.height=top.document.body.scrollHeight"
-        height="170" width="100%"></iframe>
-<div>
-
+<iframe src="head.html" frameborder="0" scrolling="no"
+        height="164" width="100%"></iframe>
+<div style="display: flex">
+    <div style="display:inline;margin-left: 5%;margin-top: 3%;width: 17%;" onload="this.height=top.document.body.scrollHeight*0.9">
+        <span>诗经植物</span>
+        <ol>
+            <li onclick="list(1)">艾</li>
+            <li onclick="list(2)">薁</li>
+        </ol>
+    </div>
+    <iframe id="pages" src="./pages/1艾.html" frameborder="0" width="45%" onload="this.height=top.document.body.scrollHeight*1.9"></iframe>
+    <iframe id="pic" src="./pic/1.html" frameborder="0" onload="this.height=top.document.body.scrollHeight"></iframe>
 </div>
+<script>
+    function list(num){
+        let a =document.getElementById("pages");
+        a.setAttribute("src","./")
+    }
+</script>
 </body>
 </html>

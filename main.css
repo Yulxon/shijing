@@ -1,12 +1,7 @@
 body {
     margin: 0;
     background-color: #f8f9eb;
-}
-
-p {
-    font-family: SimSun, sans-serif;
-    line-height: 4px;
-    font-weight: 600;
+    overflow: hidden;
 }
 
 a {
@@ -14,20 +9,12 @@ a {
     color: white;
 }
 
-#head {
-    display: flex;
-    background-color: #a0b68d
+#pages {
+    margin-top: 3%;
+    margin-left: 2%;
 }
 
-.head-list {
-    margin: auto;
-    text-align: center;
-    width: 20%;
-    font-family: 'zktqkt', ui-serif;
-    font-size: 32px;
-}
-
-@font-face {
-    font-family: 'zktqkt';
-    src: url("./src/字酷堂清楷体.ttf");
+#pic {
+    margin-top: 3%;
+    margin-left: 6%;
 }
