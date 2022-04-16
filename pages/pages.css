@@ -1,3 +1,39 @@
-p{
-    font-family: "Microsoft YaHei UI", serif;
+* {
+    /*border-style: solid;*/
+    /*border-width:1px;*/
+    font-family: "Microsoft YaHei", serif;
+}
+h1,h2,h3{
+    margin-top: 1%;
+    margin-bottom: 0.5%;
+}
+img {
+    display: block;
+    width: 60%;
+    margin-top: 6%;
+    margin-left: 20%;
+}
+body{
+    display: flex;
+}
+.md{
+    width: 70%;
+    overflow-y:auto;
+    height: 700px;
+}
+.pic {
+    width: 30%;
+    overflow-y:auto;
+    height: 700px;
+    margin: auto;
+}
+.ps {
+    font-family: SimSun, sans-serif;
+    font-size: small;
+    margin-top: 1.5%;
+    text-align: center;
+}
+
+.img-0 {
+    margin-top: 0;
 }
