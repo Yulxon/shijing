@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-color: #f8f9eb;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 a {
@@ -17,4 +17,9 @@ a {
 #pic {
     margin-top: 3%;
     margin-left: 6%;
+}
+
+@font-face {
+    font-family: 'zktqkt';
+    src: url("./src/字酷堂清楷体.ttf");
 }
