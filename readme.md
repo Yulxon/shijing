@@ -3,3 +3,10 @@
 2. shijing，诗经原文的JSON版本文件
 3. src，一些网站的素材，图标、字体之类的
 4. pic，植物图片
+
+#### 网站页面介绍
+1. head.html  页面头
+2. index.html  首页（空）
+3. list.html  诗经植物
+4. search.html  搜索页（空）
+5. shijing.html  诗经篇目（空）
