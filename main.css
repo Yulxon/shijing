@@ -8,6 +8,7 @@ a {
     text-decoration: none;
     color: white;
 }
+
 #pages {
     margin-top: 3%;
     margin-left: 2%;
@@ -21,4 +22,9 @@ a {
 @font-face {
     font-family: 'zktqkt';
     src: url("./src/字酷堂清楷体.ttf");
+}
+
+@font-face {
+    font-family: 'fangzheng';
+    src: url("./src/方正字迹-朱涛毛笔正楷简体.TTF.ttf");
 }
