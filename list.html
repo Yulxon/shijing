@@ -2,203 +2,204 @@
 <html lang="zh_CN">
 
 <head>
-  <title>诗经植物图鉴</title>
-  <link rel="stylesheet" type="text/css" href="./main.css">
-  <link rel="shortcut icon" href="src/icon.png" />
-  <style>
-    * {
-      /*border-style: solid;*/
-      /*border-width:1px;*/
-    }
+    <title>诗经植物图鉴</title>
+    <link href="./main.css" rel="stylesheet" type="text/css">
+    <link href="src/icon.png" rel="shortcut icon"/>
+    <style>
+        * {
+            /*border-style: solid;*/
+            /*border-width:1px;*/
+        }
 
-    span {
-      margin-left: 14%;
-      text-align: center;
-      width: 20%;
-      font-family: "Microsoft YaHei UI", serif;
-      font-size: x-large;
-      color: #64786f;
-    }
+        span {
+            margin-left: 14%;
+            text-align: center;
+            width: 20%;
+            font-family: "Microsoft YaHei UI", serif;
+            font-size: x-large;
+            color: #64786f;
+        }
 
-    li {
-      font-family: "Microsoft YaHei UI", serif;
-      font-size: 18px;
-      /*font-weight: bold;*/
-      margin: 15px;
-      list-style-type: none;
-      padding: 0;
-    }
-  </style>
+        li {
+            font-family: "Microsoft YaHei UI", serif;
+            font-size: 18px;
+            /*font-weight: bold;*/
+            margin: 15px;
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
 </head>
 
 <body>
-  <iframe src="head.html" frameborder="0" scrolling="no" height="170" width="100%"></iframe>
-  <div style="display: flex">
+<iframe frameborder="0" height="170" scrolling="no" src="head.html" width="100%"></iframe>
+<div style="display: flex">
     <div style="margin-top: 3%;display:inline;margin-left: 5%;width: 14%;overflow-y:auto;height: 700px">
-      <span>诗经植物</span>
-      <ol style="margin-left: 2%;">
-        <li onclick="list(1)">艾</li>
-        <li onclick="list(2)">薁</li>
-        <li onclick="list(3)">白茅</li>
-        <li onclick="list(4)">柏</li>
-        <li onclick="list(5)">驳</li>
-        <li onclick="list(6)">苌楚</li>
-        <li onclick="list(7)">常棣</li>
-        <li onclick="list(8)">唐</li>
-        <li onclick="list(9)">棠棣</li>
-        <li onclick="list(10)">柽</li>
-        <li onclick="list(11)">杻</li>
-        <li onclick="list(12)">樗</li>
-        <li onclick="list(13)">楚</li>
-        <li onclick="list(14)">茨</li>
-        <li onclick="list(15)">稻</li>
-        <li onclick="list(16)">杜</li>
-        <li onclick="list(17)">莪</li>
-        <li onclick="list(18)">蘩</li>
-        <li onclick="list(19)">枋</li>
-        <li onclick="list(20)">菲</li>
-        <li onclick="list(21)">枌</li>
-        <li onclick="list(22)">葑</li>
-        <li onclick="list(23)">扶苏</li>
-        <li onclick="list(24)">芣苢</li>
-        <li onclick="list(25)">葍</li>
-        <li onclick="list(26)">甘棠</li>
-        <li onclick="list(27)">葛</li>
-        <li onclick="list(28)">藟</li>
-        <li onclick="list(29)">枸</li>
-        <li onclick="list(30)">榖</li>
-        <li onclick="list(31)">瓜/瓞</li>
-        <li onclick="list(32)">莞</li>
-        <li onclick="list(33)">桧</li>
-        <li onclick="list(34)">果臝</li>
-        <li onclick="list(35)">菡萏/荷华</li>
-        <li onclick="list(36)">蒿</li>
-        <li onclick="list(37)">禾</li>
-        <li onclick="list(38)">瓠/匏</li>
-        <li onclick="list(39)">萑苇</li>
-        <li onclick="list(40)">棘</li>
-        <li onclick="list(41)">荠</li>
-        <li onclick="list(42)">稷</li>
-        <li onclick="list(43)">葭</li>
-        <li onclick="list(44)">菅</li>
-        <li onclick="list(45)">蒹</li>
-        <li onclick="list(46)">蕳</li>
-        <li onclick="list(47)">椒</li>
-        <li onclick="list(48)">韭</li>
-        <li onclick="list(49)">苴</li>
-        <li onclick="list(50)">椐</li>
-        <li onclick="list(51)">秬</li>
-        <li onclick="list(52)">卷耳</li>
-        <li onclick="list(53)">栲</li>
-        <li onclick="list(54)">苦</li>
-        <li onclick="list(55)">楛</li>
-        <li onclick="list(56)">莱</li>
-        <li onclick="list(57)">蓝</li>
-        <li onclick="list(58)">稂</li>
-        <li onclick="list(59)">李</li>
-        <li onclick="list(60)">栎</li>
-        <li onclick="list(61)">栵</li>
-        <li onclick="list(62)">栗</li>
-        <li onclick="list(63)">蔹</li>
-        <li onclick="list(64)">梁</li>
-        <li onclick="list(65)">蓼</li>
-        <li onclick="list(66)">苓</li>
-        <li onclick="list(67)">柽</li>
-        <li onclick="list(68)">龙</li>
-        <li onclick="list(69)">蒌</li>
-        <li onclick="list(70)">绿</li>
-        <li onclick="list(71)">麻</li>
-        <li onclick="list(72)">麦</li>
-        <li onclick="list(73)">茆</li>
-        <li onclick="list(74)">梅</li>
-        <li onclick="list(75)">蝱</li>
-        <li onclick="list(76)">穈</li>
-        <li onclick="list(77)">苗</li>
-        <li onclick="list(78)">莫</li>
-        <li onclick="list(79)">木瓜</li>
-        <li onclick="list(80)">茑</li>
-        <li onclick="list(81)">女萝</li>
-        <li onclick="list(82)">蓬</li>
-        <li onclick="list(83)">秠</li>
-        <li onclick="list(84)">苹</li>
-        <li onclick="list(85)">蘋</li>
-        <li onclick="list(86)">蒲（1）</li>
-        <li onclick="list(87)">蒲（2）</li>
-        <li onclick="list(88)">朴</li>
-        <li onclick="list(89)">漆</li>
-        <li onclick="list(90)">樕</li>
-        <li onclick="list(91)">芑</li>
-        <li onclick="list(92)">杞（1）</li>
-        <li onclick="list(93)">杞（2）</li>
-        <li onclick="list(94)">棘</li>
-        <li onclick="list(95)">荍</li>
-        <li onclick="list(96)">芹</li>
-        <li onclick="list(97)">芩</li>
-        <li onclick="list(98)">茹藘</li>
-        <li onclick="list(99)">桑</li>
-        <li onclick="list(100)">勺药</li>
-        <li onclick="list(101)">苕（1）</li>
-        <li onclick="list(102)">苕（2）</li>
-        <li onclick="list(103)">蓍</li>
-        <li onclick="list(104)">枢</li>
-        <li onclick="list(105)">菽</li>
-        <li onclick="list(106)">黍</li>
-        <li onclick="list(107)">舜</li>
-        <li onclick="list(108)">松</li>
-        <li onclick="list(109)">檖</li>
-        <li onclick="list(110)">台（薹）</li>
-        <li onclick="list(111)">檀</li>
-        <li onclick="list(112)">菼</li>
-        <li onclick="list(113)">桃</li>
-        <li onclick="list(114)">条</li>
-        <li onclick="list(115)">桐</li>
-        <li onclick="list(116)">荼（1）</li>
-        <li onclick="list(117)">荼（2）</li>
-        <li onclick="list(118)">蓷</li>
-        <li onclick="list(119)">芄兰</li>
-        <li onclick="list(120)">薇</li>
-        <li onclick="list(121)">苇</li>
-        <li onclick="list(122)">蔚</li>
-        <li onclick="list(123)">萧</li>
-        <li onclick="list(124)">荇菜</li>
-        <li onclick="list(125)">栩</li>
-        <li onclick="list(126)">藚</li>
-        <li onclick="list(127)">谖草</li>
-        <li onclick="list(128)">檿</li>
-        <li onclick="list(129)">杨</li>
-        <li onclick="list(130)">葽</li>
-        <li onclick="list(131)">桋</li>
-        <li onclick="list(132)">椅</li>
-        <li onclick="list(133)">莠</li>
-        <li onclick="list(134)">楰</li>
-        <li onclick="list(135)">榆</li>
-        <li onclick="list(136)">郁</li>
-        <li onclick="list(137)">棫</li>
-        <li onclick="list(138)">藻</li>
-        <li onclick="list(139)">柞</li>
-        <li onclick="list(140)">柘</li>
-        <li onclick="list(141)">榛</li>
-        <li onclick="list(142)">竹</li>
-        <li onclick="list(143)">蓫</li>
-        <li onclick="list(144)">纻</li>
-        <li onclick="list(145)">梓</li>
-        <li onclick="list(146)">获</li>
-        <li onclick="list(147)">鹝</li>
-        <li onclick="list(148)">笋</li>
-      </ol>
+        <span>诗经植物</span>
+        <ol style="margin-left: 2%;">
+            <li onclick="list(1)">艾</li>
+            <li onclick="list(2)">薁</li>
+            <li onclick="list(3)">白茅</li>
+            <li onclick="list(4)">柏</li>
+            <li onclick="list(5)">驳</li>
+            <li onclick="list(6)">苌楚</li>
+            <li onclick="list(7)">常棣</li>
+            <li onclick="list(8)">唐</li>
+            <li onclick="list(9)">棠棣</li>
+            <li onclick="list(10)">柽</li>
+            <li onclick="list(11)">杻</li>
+            <li onclick="list(12)">樗</li>
+            <li onclick="list(13)">楚</li>
+            <li onclick="list(14)">茨</li>
+            <li onclick="list(15)">稻</li>
+            <li onclick="list(16)">杜</li>
+            <li onclick="list(17)">莪</li>
+            <li onclick="list(18)">蘩</li>
+            <li onclick="list(19)">枋</li>
+            <li onclick="list(20)">菲</li>
+            <li onclick="list(21)">枌</li>
+            <li onclick="list(22)">葑</li>
+            <li onclick="list(23)">扶苏</li>
+            <li onclick="list(24)">芣苢</li>
+            <li onclick="list(25)">葍</li>
+            <li onclick="list(26)">甘棠</li>
+            <li onclick="list(27)">葛</li>
+            <li onclick="list(28)">藟</li>
+            <li onclick="list(29)">枸</li>
+            <li onclick="list(30)">榖</li>
+            <li onclick="list(31)">瓜/瓞</li>
+            <li onclick="list(32)">莞</li>
+            <li onclick="list(33)">桧</li>
+            <li onclick="list(34)">果臝</li>
+            <li onclick="list(35)">菡萏/荷华</li>
+            <li onclick="list(36)">蒿</li>
+            <li onclick="list(37)">禾</li>
+            <li onclick="list(38)">瓠/匏</li>
+            <li onclick="list(39)">萑苇</li>
+            <li onclick="list(40)">棘</li>
+            <li onclick="list(41)">荠</li>
+            <li onclick="list(42)">稷</li>
+            <li onclick="list(43)">葭</li>
+            <li onclick="list(44)">菅</li>
+            <li onclick="list(45)">蒹</li>
+            <li onclick="list(46)">蕳</li>
+            <li onclick="list(47)">椒</li>
+            <li onclick="list(48)">韭</li>
+            <li onclick="list(49)">苴</li>
+            <li onclick="list(50)">椐</li>
+            <li onclick="list(51)">秬</li>
+            <li onclick="list(52)">卷耳</li>
+            <li onclick="list(53)">栲</li>
+            <li onclick="list(54)">苦</li>
+            <li onclick="list(55)">楛</li>
+            <li onclick="list(56)">莱</li>
+            <li onclick="list(57)">蓝</li>
+            <li onclick="list(58)">稂</li>
+            <li onclick="list(59)">李</li>
+            <li onclick="list(60)">栎</li>
+            <li onclick="list(61)">栵</li>
+            <li onclick="list(62)">栗</li>
+            <li onclick="list(63)">蔹</li>
+            <li onclick="list(64)">梁</li>
+            <li onclick="list(65)">蓼</li>
+            <li onclick="list(66)">苓</li>
+            <li onclick="list(67)">柽</li>
+            <li onclick="list(68)">龙</li>
+            <li onclick="list(69)">蒌</li>
+            <li onclick="list(70)">绿</li>
+            <li onclick="list(71)">麻</li>
+            <li onclick="list(72)">麦</li>
+            <li onclick="list(73)">茆</li>
+            <li onclick="list(74)">梅</li>
+            <li onclick="list(75)">蝱</li>
+            <li onclick="list(76)">穈</li>
+            <li onclick="list(77)">苗</li>
+            <li onclick="list(78)">莫</li>
+            <li onclick="list(79)">木瓜</li>
+            <li onclick="list(80)">茑</li>
+            <li onclick="list(81)">女萝</li>
+            <li onclick="list(82)">蓬</li>
+            <li onclick="list(83)">秠</li>
+            <li onclick="list(84)">苹</li>
+            <li onclick="list(85)">蘋</li>
+            <li onclick="list(86)">蒲（1）</li>
+            <li onclick="list(87)">蒲（2）</li>
+            <li onclick="list(88)">朴</li>
+            <li onclick="list(89)">漆</li>
+            <li onclick="list(90)">樕</li>
+            <li onclick="list(91)">芑</li>
+            <li onclick="list(92)">杞（1）</li>
+            <li onclick="list(93)">杞（2）</li>
+            <li onclick="list(94)">棘</li>
+            <li onclick="list(95)">荍</li>
+            <li onclick="list(96)">芹</li>
+            <li onclick="list(97)">芩</li>
+            <li onclick="list(98)">茹藘</li>
+            <li onclick="list(99)">桑</li>
+            <li onclick="list(100)">勺药</li>
+            <li onclick="list(101)">苕（1）</li>
+            <li onclick="list(102)">苕（2）</li>
+            <li onclick="list(103)">蓍</li>
+            <li onclick="list(104)">枢</li>
+            <li onclick="list(105)">菽</li>
+            <li onclick="list(106)">黍</li>
+            <li onclick="list(107)">舜</li>
+            <li onclick="list(108)">松</li>
+            <li onclick="list(109)">檖</li>
+            <li onclick="list(110)">台（薹）</li>
+            <li onclick="list(111)">檀</li>
+            <li onclick="list(112)">菼</li>
+            <li onclick="list(113)">桃</li>
+            <li onclick="list(114)">条</li>
+            <li onclick="list(115)">桐</li>
+            <li onclick="list(116)">荼（1）</li>
+            <li onclick="list(117)">荼（2）</li>
+            <li onclick="list(118)">蓷</li>
+            <li onclick="list(119)">芄兰</li>
+            <li onclick="list(120)">薇</li>
+            <li onclick="list(121)">苇</li>
+            <li onclick="list(122)">蔚</li>
+            <li onclick="list(123)">萧</li>
+            <li onclick="list(124)">荇菜</li>
+            <li onclick="list(125)">栩</li>
+            <li onclick="list(126)">藚</li>
+            <li onclick="list(127)">谖草</li>
+            <li onclick="list(128)">檿</li>
+            <li onclick="list(129)">杨</li>
+            <li onclick="list(130)">葽</li>
+            <li onclick="list(131)">桋</li>
+            <li onclick="list(132)">椅</li>
+            <li onclick="list(133)">莠</li>
+            <li onclick="list(134)">楰</li>
+            <li onclick="list(135)">榆</li>
+            <li onclick="list(136)">郁</li>
+            <li onclick="list(137)">棫</li>
+            <li onclick="list(138)">藻</li>
+            <li onclick="list(139)">柞</li>
+            <li onclick="list(140)">柘</li>
+            <li onclick="list(141)">榛</li>
+            <li onclick="list(142)">竹</li>
+            <li onclick="list(143)">蓫</li>
+            <li onclick="list(144)">纻</li>
+            <li onclick="list(145)">梓</li>
+            <li onclick="list(146)">获</li>
+            <li onclick="list(147)">鹝</li>
+            <li onclick="list(148)">笋</li>
+        </ol>
     </div>
-    <iframe id="pages" src="./pages/1艾.html" frameborder="0" width="70%" scrolling="no" onload="this.height=700"></iframe>
-  </div>
-  <script>
+    <iframe frameborder="0" id="pages" onload="this.height=700" scrolling="no" src="./pages/1艾.html"
+            width="70%"></iframe>
+</div>
+<script>
     function list(num) {
-      switch (num) {
-        case 1: {
+        switch (num) {
+            case 1: {
 
+            }
         }
-      }
-      alert("受到神秘力量影响，你无法打开这个页面")
+        alert("受到神秘力量影响，你无法打开这个页面")
     }
-  </script>
+</script>
 </body>
 
 </html>
