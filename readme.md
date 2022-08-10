@@ -9,5 +9,4 @@
 1. head.html 页面头
 2. index.html 首页
 3. list.html 诗经植物
-4. search.html 搜索页
-5. shijing.html 诗经篇目
+4. shijing.html 诗经篇目
