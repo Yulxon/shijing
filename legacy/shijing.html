@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="按照诗经篇目寻找相关植物，探索诗句与草木之间的联系。">
+    <title>诗经篇目 · 诗经植物图鉴</title>
+    <link rel="icon" href="src/icon.png">
+    <link rel="stylesheet" href="main.css">
+    <script defer src="plants-data.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">跳至主要内容</a>
+<header class="site-header"><a class="brand" href="index.html"><img src="src/icon.png" alt="" width="44" height="44"><span><strong>诗经植物图鉴</strong><small>THE BOTANY OF SHIJING</small></span></a><nav aria-label="主导航"><a href="index.html">首页</a><a href="list.html">诗经植物</a><a href="shijing.html" aria-current="page">诗经篇目</a><a href="search.html">植物检索</a></nav></header>
+<main class="container" id="main">
+    <div class="page-heading"><span class="eyebrow">循诗寻草木</span><h1>诗经篇目</h1><p>一首诗里，藏着怎样的草木？从篇目出发，找到与它相遇的植物。</p></div>
+    <label for="poem-filter">筛选篇目或植物</label><div class="search-bar"><input type="search" id="poem-filter" placeholder="如：关雎、采葛、桃" autocomplete="off"></div>
+    <p class="result-summary" id="poem-summary" role="status"></p><div class="poem-grid" id="poem-list"></div>
+<noscript><p>请启用 JavaScript 使用植物目录、篇目筛选和检索。您也可以直接阅读<a href="pages/1艾.html">艾的植物条目</a>。</p></noscript>
+</main>
+<footer class="site-footer"><span>诗经植物图鉴 · 让古籍中的植物鲜活起来</span><a href="mailto:perfectymx@foxmail.com">联系我们 ↗</a></footer>
+</body>
+</html>

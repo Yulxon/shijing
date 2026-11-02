@@ -1,0 +1,57 @@
+{
+    "id": 76,
+    "name": "穈",
+    "url": "pages/76穈.html",
+    "poems": [
+        "生民"
+    ],
+    "sections": [
+        {
+            "id": "s1",
+            "title": "出现篇目",
+            "blocks": [
+                {
+                    "kind": "paragraph",
+                    "text": "《生民》"
+                }
+            ]
+        },
+        {
+            "id": "s2",
+            "title": "古代记载",
+            "blocks": [
+                {
+                    "kind": "source",
+                    "text": "《毛诗故训传》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "穈，赤苗也。（《毛传》注《生民》）"
+                },
+                {
+                    "kind": "source",
+                    "text": "《毛诗正义》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "赤苗、白苗者，郭璞曰：“虋，今之赤粱粟；芑，今之白粱粟，皆好穀也。（《毛诗正义》疏《生民》）"
+                },
+                {
+                    "kind": "source",
+                    "text": "《诗集传》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "穈、赤梁粟也。（《诗集传》集注《生民》)"
+                }
+            ]
+        }
+    ],
+    "images": [
+        {
+            "src": "pages/pic/77穈-卷十三-米部-丹黍米-1518.jpg",
+            "caption": "<补遗雷公炮制便览>",
+            "alt": "穈的植物图谱"
+        }
+    ]
+}

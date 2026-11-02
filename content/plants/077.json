@@ -1,0 +1,43 @@
+{
+    "id": 77,
+    "name": "苗",
+    "url": "pages/77苗.html",
+    "poems": [
+        "硕鼠"
+    ],
+    "sections": [
+        {
+            "id": "s1",
+            "title": "出现篇目",
+            "blocks": [
+                {
+                    "kind": "paragraph",
+                    "text": "《硕鼠》"
+                }
+            ]
+        },
+        {
+            "id": "s2",
+            "title": "古代记载",
+            "blocks": [
+                {
+                    "kind": "source",
+                    "text": "《毛诗故训传》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "苗，嘉谷也。（《毛传》注《硕鼠》）"
+                },
+                {
+                    "kind": "source",
+                    "text": "《毛诗正义》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "正义曰：黍麦指谷实言之，是鼠之所食。苗之茎叶，以非鼠能食之，故云“嘉谷”，谓谷实也。谷生于苗，故言苗以韵句。（《毛诗正义》疏《硕鼠》）"
+                }
+            ]
+        }
+    ],
+    "images": []
+}

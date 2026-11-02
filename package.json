@@ -1,0 +1,21 @@
+{
+    "name": "shijing-botanical-atlas",
+    "private": true,
+    "scripts": {
+        "start": "node scripts/dev.mjs",
+        "dev": "node scripts/dev.mjs",
+        "build": "node scripts/build.mjs",
+        "preview": "node scripts/serve.mjs",
+        "check": "node scripts/check.mjs",
+        "test": "npm run build && node --test tests/unit/*.test.mjs && npm run check",
+        "test:e2e": "playwright test"
+    },
+    "engines": {
+        "node": ">=22"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.64.1",
+        "linkedom": "^0.18.15"
+    },
+    "type": "module"
+}

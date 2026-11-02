@@ -1,0 +1,12 @@
+/* Shared visual language: warm paper, botanical green, quiet typography. */
+:root {
+    color-scheme: light;
+    --paper: #f7f6ef;
+    --ink: #253c31;
+    --green: #49664d;
+    --muted: #73796b;
+    --line: #dcded0;
+    --surface: #fffef9;
+    --selected: #e9edde;
+    --focus: #99733e;
+}

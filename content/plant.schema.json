@@ -1,0 +1,45 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "诗经植物条目",
+    "type": "object",
+    "required": ["id", "name", "url", "poems", "sections", "images"],
+    "additionalProperties": false,
+    "properties": {
+        "$schema": { "type": "string" },
+        "id": { "type": "integer", "minimum": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "pattern": "^pages/\\d+[^/]*\\.html$" },
+        "poems": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "sections": {
+            "type": "array", "minItems": 1,
+            "items": {
+                "type": "object", "required": ["id", "title", "blocks"], "additionalProperties": false,
+                "properties": {
+                    "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+                    "title": { "type": "string", "minLength": 1 },
+                    "blocks": {
+                        "type": "array",
+                        "items": {
+                            "type": "object", "required": ["kind", "text"], "additionalProperties": false,
+                            "properties": {
+                                "kind": { "enum": ["paragraph", "source"] },
+                                "text": { "type": "string", "minLength": 1 }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "images": {
+            "type": "array",
+            "items": {
+                "type": "object", "required": ["src", "caption", "alt"], "additionalProperties": false,
+                "properties": {
+                    "src": { "type": "string", "pattern": "^pages/pic/[^/]+$" },
+                    "caption": { "type": "string" },
+                    "alt": { "type": "string", "minLength": 1 }
+                }
+            }
+        }
+    }
+}

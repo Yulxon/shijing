@@ -1,0 +1,57 @@
+{
+    "id": 61,
+    "name": "栵",
+    "url": "pages/61栵.html",
+    "poems": [
+        "皇矣"
+    ],
+    "sections": [
+        {
+            "id": "s1",
+            "title": "出现篇目",
+            "blocks": [
+                {
+                    "kind": "paragraph",
+                    "text": "《皇矣》"
+                }
+            ]
+        },
+        {
+            "id": "s2",
+            "title": "古代记载",
+            "blocks": [
+                {
+                    "kind": "source",
+                    "text": "《毛诗故训传》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "栵，栭也。（《毛传》注《皇矣》）"
+                },
+                {
+                    "kind": "source",
+                    "text": "《毛诗草木鸟兽虫鱼疏》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "栵，栭。叶如榆也，木理坚韧而赤，可为车辕。"
+                },
+                {
+                    "kind": "source",
+                    "text": "《毛诗正义》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "郭璞曰：“栭树似槲樕而痺小，子如细栗，今江东呼为栭栗。”陆机《疏》云：“叶如榆也，木理坚韧而赤，可为车辕。”（《毛诗正义》疏《皇矣》）"
+                }
+            ]
+        }
+    ],
+    "images": [
+        {
+            "src": "pages/pic/62-栵-236.png",
+            "caption": "<细井徇>",
+            "alt": "栵的植物图谱"
+        }
+    ]
+}

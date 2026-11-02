@@ -1,0 +1,25 @@
+{
+    "id": 19,
+    "name": "枋",
+    "url": "pages/19枋.html",
+    "poems": [
+        "防有鹊巢"
+    ],
+    "sections": [
+        {
+            "id": "s1",
+            "title": "出现篇目",
+            "blocks": [
+                {
+                    "kind": "paragraph",
+                    "text": "《防有鹊巢》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "文献未有明确记载，疑为一种乔木。欢迎补充！"
+                }
+            ]
+        }
+    ],
+    "images": []
+}

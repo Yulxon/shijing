@@ -1,0 +1,79 @@
+{
+    "id": 136,
+    "name": "郁",
+    "url": "pages/136郁.html",
+    "poems": [
+        "七月"
+    ],
+    "sections": [
+        {
+            "id": "s1",
+            "title": "出现篇目",
+            "blocks": [
+                {
+                    "kind": "paragraph",
+                    "text": "《七月》"
+                }
+            ]
+        },
+        {
+            "id": "s2",
+            "title": "古代记载",
+            "blocks": [
+                {
+                    "kind": "source",
+                    "text": "《毛诗故训传》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "郁，棣属。（《毛传》注《七月》）"
+                },
+                {
+                    "kind": "source",
+                    "text": "《毛诗草木鸟兽虫鱼疏》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "郁，其树高五六尺，其实大如李，色赤，食之甘。"
+                },
+                {
+                    "kind": "source",
+                    "text": "《毛诗正义》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "正义曰：“郁，棣属”者，是唐棣之类属也。刘稹《毛诗义问》云：“其树高五六尺，其实大如李，正赤，食之甜。”《本草》云：“郁一名雀李，一名车下李，一名棣。生高山川谷或平田中，五月时实。”言一名棣，则与棣相类，故云棣属。 （《毛诗正义》疏《七月》）"
+                },
+                {
+                    "kind": "source",
+                    "text": "《本草纲目》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "见“常棣”"
+                }
+            ]
+        },
+        {
+            "id": "s3",
+            "title": "当代记载",
+            "blocks": [
+                {
+                    "kind": "source",
+                    "text": "《中国植物志》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "见“常棣”"
+                }
+            ]
+        }
+    ],
+    "images": [
+        {
+            "src": "pages/pic/136-郁-215.png",
+            "caption": "<细井徇>",
+            "alt": "郁的植物图谱"
+        }
+    ]
+}

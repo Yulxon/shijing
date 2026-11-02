@@ -1,0 +1,45 @@
+{
+    "id": 137,
+    "name": "棫",
+    "url": "pages/137棫.html",
+    "poems": [
+        "棫朴",
+        "旱麓",
+        "皇矣"
+    ],
+    "sections": [
+        {
+            "id": "s1",
+            "title": "出现篇目",
+            "blocks": [
+                {
+                    "kind": "paragraph",
+                    "text": "《棫朴》、《旱麓》、《皇矣》"
+                },
+                {
+                    "kind": "source",
+                    "text": "《本草纲目》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "见“柞”"
+                }
+            ]
+        },
+        {
+            "id": "s2",
+            "title": "当代记载",
+            "blocks": [
+                {
+                    "kind": "source",
+                    "text": "《中国植物志》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "见“柞”"
+                }
+            ]
+        }
+    ],
+    "images": []
+}

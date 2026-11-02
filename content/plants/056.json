@@ -1,0 +1,49 @@
+{
+    "id": 56,
+    "name": "莱",
+    "url": "pages/56莱.html",
+    "poems": [
+        "南山有台"
+    ],
+    "sections": [
+        {
+            "id": "s1",
+            "title": "出现篇目",
+            "blocks": [
+                {
+                    "kind": "paragraph",
+                    "text": "《南山有台》"
+                }
+            ]
+        },
+        {
+            "id": "s2",
+            "title": "古代记载",
+            "blocks": [
+                {
+                    "kind": "source",
+                    "text": "《毛诗故训传》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "莱，草也。笺云：兴者，山之有草木，以自覆盖，成其高大，喻人君有贤臣，以自尊显。（《毛传》注《南山有台》）"
+                },
+                {
+                    "kind": "source",
+                    "text": "《毛诗草木鸟兽虫鱼疏》"
+                },
+                {
+                    "kind": "paragraph",
+                    "text": "莱，草名，其叶可食，今兖州人蒸以为茹，谓之莱蒸。"
+                }
+            ]
+        }
+    ],
+    "images": [
+        {
+            "src": "pages/pic/57莱-103.PNG",
+            "caption": "<细井徇>",
+            "alt": "莱的植物图谱"
+        }
+    ]
+}
