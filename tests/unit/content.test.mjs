@@ -53,6 +53,12 @@ test('renderers escape content and keep standalone and catalogue headings semant
     assert.ok(document.querySelector('article').textContent.includes('<script>alert(1)</script>'));
     assert.equal(parseHTML(plantArticle(plants[0], '', 'h2')).document.querySelectorAll('h1').length, 0);
     assert.ok(plantCard({ ...plants[0], image: '' }).includes('pages/1艾.html'));
+    assert.ok(plantCard({ ...plants[0], image: '' }).includes('图谱尚未收录'));
+    for (const plant of plants.filter(plant => !plant.images.length)) {
+        const page = parseHTML(plantArticle(plant)).document;
+        assert.ok(page.querySelector('.gallery-empty')?.textContent.includes('图谱尚未收录'), plant.name);
+        assert.equal(page.querySelectorAll('img').length, 0, `${plant.name}: do not request nonexistent images`);
+    }
 });
 
 test('schema rejects duplicate IDs, invalid content and unsafe asset paths', () => {
