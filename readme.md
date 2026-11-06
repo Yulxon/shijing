@@ -51,6 +51,10 @@ npm run test:e2e   # 桌面与手机端到端测试
 
 执行 `npm run build`，将 `dist/` 的全部内容上传至任意静态托管服务的网站根目录。保留中文文件名和目录结构，并将 `404.html` 配置为自定义404页面。只有 `dist/` 是发布目录；源资料、迁移档案和本地配置不应发布。
 
+构建会根据 `site.config.json` 中的域名自动生成 `sitemap.xml`、`robots.txt` 和内容页面的 canonical 链接。站点地图包含首页、植物目录、篇目索引与全部植物详情页；搜索页、独立导航页和404页设置 `noindex, follow`，不纳入站点地图。不要用 robots.txt 阻止这些页面的抓取，否则搜索引擎无法读取 noindex。
+
+部署后可在 Google Search Console 中验证站点所有权，并提交 `https://sj.oui.moe/sitemap.xml`。如更换域名，修改 `site.config.json` 后重新构建，并向新域名对应的 Search Console 资源提交站点地图。站点地图有助于发现页面，但不保证收录或排名。
+
 首页、植物详情、目录链接及篇目索引无需 JavaScript 即可阅读；全文检索和目录内切换需要浏览器模块及 HTTP 服务，不再支持直接双击源文件预览。
 
 详细架构和设计约束见 [docs/architecture.md](docs/architecture.md)。

@@ -7,10 +7,21 @@ import { homePage, cataloguePage, searchPage, poemsPage, detailPage, headerPage,
 export async function build() {
     const plants = await loadPlants();
     const dist = path.join(root, 'dist');
+    const config = JSON.parse(await fs.readFile(path.join(root, 'site.config.json'), 'utf8'));
+    if (!/^[a-z0-9.-]+$/.test(config.domain)) throw new Error('Invalid site domain');
+    const origin = `https://${config.domain}`;
+    const indexablePages = ['index.html', 'list.html', 'shijing.html', ...plants.map(plant => plant.url)];
+    const canonicalURL = file => new URL(file === 'index.html' ? '/' : file, origin).href;
     // No source directory is deleted. Rebuild only generated text files and replace assets.
     await fs.mkdir(path.join(dist, 'data/plants'), { recursive: true });
     await fs.mkdir(path.join(dist, 'pages'), { recursive: true });
     const write = async (file, text) => {
+        if (file.endsWith('.html')) {
+            const metadata = indexablePages.includes(file)
+                ? `<link rel="canonical" href="${canonicalURL(file)}">`
+                : '<meta name="robots" content="noindex, follow">';
+            text = text.replace('</head>', `${metadata}</head>`);
+        }
         await fs.mkdir(path.dirname(path.join(dist, file)), { recursive: true });
         await fs.writeFile(path.join(dist, file), text);
     };
@@ -23,8 +34,11 @@ export async function build() {
     const template = await fs.readFile(path.join(root, 'web/templates/home.html'), 'utf8');
     const pages = { 'index.html': homePage(index, template), 'list.html': cataloguePage(plants), 'search.html': searchPage(index), 'shijing.html': poemsPage(index), 'head.html': headerPage(), '404.html': notFoundPage() };
     await Promise.all(Object.entries(pages).map(([file, html]) => write(file, html)));
-    const config = JSON.parse(await fs.readFile(path.join(root, 'site.config.json'), 'utf8'));
-    if (!/^[a-z0-9.-]+$/.test(config.domain)) throw new Error('Invalid site domain');
+    await write('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n' +
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+        indexablePages.map(file => `    <url><loc>${canonicalURL(file)}</loc></url>`).join('\n') +
+        '\n</urlset>\n');
+    await write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`);
     await write('CNAME', config.domain + '\n');
     await write('.nojekyll', '');
     await write('data/search.json', JSON.stringify(index.map((plant, i) => ({ ...plant, searchText: excerptText(plants[i]) }))));
